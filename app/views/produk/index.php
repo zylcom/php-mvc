@@ -31,19 +31,19 @@
 
                     <div class="d-flex">
                         <div class="p-1">
-                            <a href="<?= BASE_URL; ?>/produk/detail/<?= $prdk["id"]; ?>" class="badge bg-primary text-decoration-none">
+                            <a href="<?= BASE_URL; ?>/produk/detail/<?= $prdk['id']; ?>" class="badge bg-primary text-decoration-none">
                                 Detail
                             </a>
                         </div>
                         <div class="p-1">|</div>
                         <div class="p-1">
-                            <a href="<?= BASE_URL; ?>/produk/detail/<?= $prdk["id"]; ?>" class="badge bg-success text-decoration-none tampilModalEdit" data-bs-toggle="modal" data-bs-target="#formModal" data-id="<?= $prdk["id"]; ?>">
+                            <a href="<?= BASE_URL; ?>/produk/detail/<?= $prdk['id']; ?>" class="badge bg-success text-decoration-none tampilModalEdit" data-bs-toggle="modal" data-bs-target="#formModal" data-id="<?= $prdk["id"]; ?>">
                                 Edit
                             </a>
                         </div>
                         <div class="p-1">|</div>
                         <div class="p-1">
-                            <a href="<?= BASE_URL; ?>/produk/hapus/<?= $prdk["id"]; ?>" class="badge bg-danger text-decoration-none" onclick="return confirm('Yakin ingin menghapus data?')">
+                            <a href="<?= BASE_URL; ?>/produk/hapus/<?= $prdk['id']; ?>" class="badge bg-danger text-decoration-none" onclick="return confirm('Yakin ingin menghapus data?')">
                                 Hapus
                             </a>
                         </div>
