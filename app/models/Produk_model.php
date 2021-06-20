@@ -62,14 +62,14 @@ class Produk_model
     public function cariDataProduk()
     {
         $keyword = $_POST['keyword'];
-        $query = 'SELECT * FROM ' . $this->table . ' 
+        $query = "SELECT * FROM " . $this->table . " 
         WHERE 
         nama_produk LIKE :keyword OR
         keterangan LIKE :keyword OR
         harga LIKE :keyword OR
-        jumlah LIKE :keyword';
+        jumlah LIKE :keyword";
         $this->db->query($query);
-        $this->db->bind('keyword', '%$keyword%');
+        $this->db->bind("keyword", "%$keyword%");
 
         return $this->db->resultSet();
     }
